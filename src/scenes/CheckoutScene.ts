@@ -299,7 +299,7 @@ export default class CheckoutScene extends Phaser.Scene {
             }).setOrigin(0.5);
             billContainer.add(text);
 
-            billContainer.setSize(140, 80);
+            billContainer.setSize(80, 35); // Match actual bill size
             billContainer.setInteractive({ draggable: true, useHandCursor: true });
             billContainer.setData('value', value);
             billContainer.setData('used', false);
